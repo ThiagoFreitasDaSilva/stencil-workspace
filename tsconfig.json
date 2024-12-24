@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "declaration": true,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es6",
+        "sourceMap": true,
+        "lib": [
+            "es6"
+        ],
+        "paths": {
+            "@thiagofs/angular": [
+                "./packages/angular/dist/stencil-wrapper"
+            ],
+            "@thiagofs/stencil/loader": [
+                "./packages/stencil/loader"
+            ],
+            "@thiagofs/stencil": [
+                "./packages/stencil"
+            ],
+            "@thiagofs/stencil/dist/components/*": ["./packages/stencil/dist/components/*"],
+            "@thiagofs/react": [
+                "./packages/react/dist"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts",
+        "**/__tests__/**"
+    ]
+}
